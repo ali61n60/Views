@@ -22,6 +22,7 @@ namespace Views
             services.AddMvc();
             services.Configure<RazorViewEngineOptions>(options => {
                 options.ViewLocationExpanders.Add(new SimpleExpander());
+                options.ViewLocationExpanders.Add(new ColorExpander());
             });
             //services.Configure<MvcViewOptions>(options => {
             //    options.ViewEngines.Clear();
