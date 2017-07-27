@@ -10,9 +10,12 @@ namespace Views.Controllers
     {
         public ViewResult Index()
         {
-            return  View(new string[] { "Apple", "Orange", "Pear" });
+            return View(new string[] { "Apple", "Orange", "Pear" });
         }
 
-        public ViewResult List() => View();
+        public ViewResult List()
+        {
+            return View();
+        }
     }
 }
