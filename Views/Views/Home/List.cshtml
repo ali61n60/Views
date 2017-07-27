@@ -11,7 +11,7 @@
     <script asp-src-include="lib/jquery/dist/*.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            var list = $("#list")
+            var list = $("#list");
             JSON.parse($("#jsonData").text()).forEach(function (val) {
                 console.log("Val: " + val);
                 list.append($("<li>").text(val));
