@@ -10,7 +10,7 @@ namespace Views.Controllers
     {
         public ViewResult Index()
         {
-            return  View(new string[] { "<i>Apple</i>", "Orange", "Pear" });
+            return  View(new string[] { "Apple", "Orange", "Pear" });
         }
 
         public ViewResult List() => View();
